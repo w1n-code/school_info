@@ -1,0 +1,140 @@
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+/* #wrap {
+  margin:0 auto;  화면 중앙에 배치
+  width:1100px;  너비
+} */
+
+/********************/
+/* drawer-menu 영역 */
+/********************/
+
+.button {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 1002; /* set to a higher value than drawer menu */
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* move off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease-in-out;
+  z-index: 1001;
+  padding-top: 40px;
+}
+.drawer-menu.open {
+  left: 0; /* slide in */
+}
+.menu-items {
+  display: none; /* hide by default */
+  list-style: none;
+}
+.drawer-menu.open .menu-items {
+  display: block; /* show when open */
+}
+.menu-items li a {
+  text-decoration: none;
+  color: black; /* or any desired color */
+  display: block;
+  padding: 10px; /* or any desired spacing */
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.menu-items li a:hover {
+  font-weight: bold;
+}
+
+/*********************************/
+/* header 영역 - 로고와 학교 로고 */
+/*********************************/
+
+header{
+  margin:0 auto;
+  width: 1100px;    /*  너비 */
+  height:150px;   /* 높이 */ 
+  overflow: hidden;
+}
+
+#logo{
+  float:left;
+  width: 250px;
+  height:100%;
+  background-color:rgb(37, 72, 0);
+}
+#schoolLogo {
+  float:right;
+  width: 850px;
+  display: flex;
+  align-items: center;
+}
+#schoolLogo img {
+  margin-top: 15px;
+  height: 120px;
+  margin-left: 10px;
+}
+#schoolLogo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#write{
+  margin:0 auto;
+  width:1100px;    /*  너비 */
+  height:500px;   /* 높이 */ 
+  /* background-color: aqua; */
+}
+
+#map {
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+
+/********************/
+/* schoolMeals 영역 */
+/********************/
+
+#schoolMeals{
+ float: right;
+ width:300px;
+ background-color: red;
+ height: 150px;
+ overflow:hidden;
+}
+
+/********************/
+/*   footer 영역    */
+/********************/
+
+footer {
+  height:150px;
+  border-top: 2px solid #000000; /* Replace #333 with your desired dark gray color value */
+  background-color: #808080; /* Replace #f2f2f2 with your desired light gray color value */
+}
+
+#footer-inner{
+  margin:0 auto;
+  width:1100px; 
+}
+.word{
+  color:#fff
+}
