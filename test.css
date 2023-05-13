@@ -1,9 +1,9 @@
 a {
   text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
 }
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 /* #wrap {
   margin:0 auto;  화면 중앙에 배치
@@ -63,9 +63,9 @@ ul {
   font-weight: bold;
 }
 
-/*********************************/
-/* header 영역 - 로고와 학교 로고 */
-/*********************************/
+/***************/
+/* header 영역 */
+/***************/
 
 header{
   margin:0 auto;
@@ -73,6 +73,12 @@ header{
   height:150px;   /* 높이 */ 
   overflow: hidden;
 }
+header span a{
+  text-decoration: none;
+  color: black; /* or any desired color */
+}
+
+/* 웹페이지 logo */
 
 #logo{
   float:left;
@@ -80,6 +86,9 @@ header{
   height:100%;
   background-color:rgb(37, 72, 0);
 }
+
+/* schoolLogo */
+
 #schoolLogo {
   float:right;
   width: 850px;
@@ -96,29 +105,132 @@ header{
   font-weight: bold;
 }
 
-#write{
+/********************/
+/* firstLine 영역 */
+/********************/
+
+#firstLine{
   margin:0 auto;
   width:1100px;    /*  너비 */
-  height:500px;   /* 높이 */ 
-  /* background-color: aqua; */
+  height:300px;   /* 높이 */ 
+  border-top: 1px solid #000000;
 }
+
+/* map */
 
 #map {
   float: left;
   width: 400px;
   height: 300px;
+  background-color: antiquewhite;
+}
+
+/* schedule */
+
+#schedule{
+  float: left;
+  width: 400px;
+  height: 300px;
+  overflow: auto; /* Add scrollbar */
+}
+#schedule input[type="radio"] {
+  display:none;  /* 라디오 버튼 감춤 */ 
+}
+#schedule label {  /* 탭 제목 스타일 */ 
+  display:inline-block;  /* 탭들을 가로로 배치 */
+  margin:0;  /* 마진 */
+  padding:15px 25px;  /* 패딩 */
+  font-weight:600;   /* 글자 굵기 */
+  text-align: center;   /* 글자 정렬 */
+  color:#9b9b9b;  /* 글자 색 */ 
+  border:1px solid transparent;
+  /* border-left:1px solid #ddd; */
+}
+#schedule label:hover {  /* 마우스 오버했을 때 탭 제목 스타일 */
+  cursor:pointer;
+}
+#schedule input:checked + label {  /* 활성화된 탭 제목 스타일 */ 
+  color:rgb(0, 0, 0);
+  border:1px solid #ddd;
+  background-color: #eee;
+}
+.tabContent {  /* 탭 내용 스타일 */
+  display:none;
+  border-top:1px solid #ddd;
+}
+.tabContent h2{
+  display:none; 
+}
+.tabContent ul{
+  list-style: disc;
+  margin-left:10px;
+}
+.tabContent ul li{
+  font-size:16px;
+  line-height:2.5;
+}
+#tab1:checked ~ #first-semester, /* 한 종류만 뜨게 하는 코드 */
+#tab2:checked ~ #second-semester,
+#tab3:checked ~ #plus {
+  display:block;
+}
+
+/* schoolMeals */
+
+#schoolMeals{
+ float: left;
+ width: 294px;
+ /* margin: 20px 20px 20px 20px; */
+ /* border-style: solid; */
+ /* border-color:rgb(29, 35, 35); */
+ height: 300px;
+ overflow:hidden;
+ /* border-radius: 15px; */
 }
 
 /********************/
-/* schoolMeals 영역 */
+/* secondLine 영역 */
 /********************/
 
-#schoolMeals{
- float: right;
- width:300px;
- background-color: red;
- height: 150px;
- overflow:hidden;
+#secondLine{
+  margin:0 auto;
+  width:1100px;    /*  너비 */
+  height:200px;   /* 높이 */ 
+  border-top: 1px solid #000000;
+}
+
+/* something */
+
+#something {
+  float: left;
+  width: 550px;
+  height: 200px;
+  /* background-color: rgb(85, 255, 0); */
+  border-right: 1px solid #000000;
+}
+
+/* other-schools */
+
+#other-schools{
+  float: left;
+  width: 549px;
+  height: 200px;
+  overflow: auto; /* Add scrollbar */
+}
+#other-schools h3{
+  border-bottom:1px solid #ddd;
+  margin-left:10px;
+}
+#other-schools ul{
+  list-style: disc;
+  margin-left:10px;
+}
+#other-schools ul li{
+  font-size:16px;
+  line-height: 2;
+}
+#other-schools p{
+  float: right;
 }
 
 /********************/
@@ -127,8 +239,8 @@ header{
 
 footer {
   height:150px;
-  border-top: 2px solid #000000; /* Replace #333 with your desired dark gray color value */
-  background-color: #808080; /* Replace #f2f2f2 with your desired light gray color value */
+  border-top: 2px solid gray; /* Replace #333 with your desired dark gray color value */
+  background-color: black; /* Replace #f2f2f2 with your desired light gray color value */
 }
 
 #footer-inner{
@@ -136,5 +248,6 @@ footer {
   width:1100px; 
 }
 .word{
-  color:#fff
+  color:#fff;
+  text-align: center;
 }
