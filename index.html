@@ -27,21 +27,74 @@
         </div>
         <div id="schoolLogo">
           <img src="images/대구일중 로고.png" alt="School Logo">
-          <span>  대구일중학교</span>
+          <span>  <a href="https://tgil.dge.ms.kr/tgilm/main.do">대구일중학교</a></span>
         </div>
       </header>
-      <div id="write">
+      <div id="firstLine">
         <div id="map">
-          
+          <!-- 도메인 설정 후 js와 css이용해 제작 -->
+        </div>
+        <div id="schedule"> <!--탭 메뉴-->
+          <!-- <h3>2023학년도 학사일정</h3> -->
+          <input type="radio" id="tab1" name="tabs">
+          <label for="tab1">1학기</label>
+          <input type="radio" id="tab2" name="tabs" checked>
+          <label for="tab2">2학기</label>
+          <input type="radio" id="tab3" name="tabs">
+          <label for="tab3">기타</label>
+          <div id="first-semester" class="tabContent">
+            <h2>1학기 내용입니다.</h2>
+            <ul>
+              <li>기초학력진단검사 (3/8)</li>
+              <li>중간고사 (5/1~5/2)</li>
+              <li>기말고사 (6/28~6/30)</li>
+              <li>여름휴가식 (7/18)</li>
+            </ul>
+          </div>
+          <div id="second-semester" class="tabContent">
+            <h2>2학기 내용입니다.</h2>
+            <ul>
+              <li>개학식 (8/18)</li>
+              <li>중간고사 (9/26~9/27 | 2,3학년)</li>
+              <li>재량휴업일(10/3 | 주말과 개천절 사이)</li>
+              <li>기말고사 (11/1~11/3 | 3학년)</li>
+              <li>기말고사 (11/29~12/1 | 2학년)</li>
+              <li>매화제 (12/22)</li>
+              <li>겨울휴가식 (12/29)</li>
+            </ul>
+          </div>
+          <div id="plus" class="tabContent">
+            <h2>추가적인 내용입니다.</h2>
+            <ul>
+              <li>개학식 (24. 2/2)</li>
+              <li>종업식/졸업식 (24. 2/6)</li>
+            </ul>
+          </div>
         </div>
         <div id="schoolMeals">
-                
+          <h4>학교급식</h4>
+        </div>
+      </div>
+      <div id="secondLine">
+        <div id="something">
+
+        </div>
+        <div id="other-schools">
+          <h3>주변 학교</h3>
+          <p>*직선 거리 기준 top3</p>
+          <ul>
+            <li><a href="침산중학교">침산중학교</a></li>
+            <li><a href="경일중학교">경일중학교</a></li>
+            <li><a href="경명여자중학교">경명여자중학교</a></li>
+          </ul>
         </div>
       </div>
       
       <footer>
         <div id="footer-inner">
-          <p class="word">footer입니다.</p>
+          <p class="word">여러 학교들의 정보들을 간략하게 정리해놓은 사이트 입니다.<br><br>
+          <b>made by Yang-Taewon</b>
+          </p>
         </div>
       </footer>
     </div>
