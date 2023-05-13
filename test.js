@@ -8,7 +8,7 @@ drawerToggle.addEventListener('click', function() { //addEventListener를 지정
 
 var container = document.getElementById('map');
 var options = {
-  center: new kakao.maps.LatLng(33.450701, 126.570667),
+  center: new kakao.maps.LatLng(35.88720165868838, 128.58509478903335),
   level: 3
 };
 
