@@ -1,0 +1,259 @@
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+/* ul {
+  list-style: none;
+} */
+
+/* #wrap {
+  margin:0 auto;  화면 중앙에 배치
+  width:1100px;  너비
+} */
+
+/********************/
+/* drawer-menu 영역 */
+/********************/
+
+.button {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 1002; /* set to a higher value than drawer menu */
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* move off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease-in-out;
+  z-index: 1001;
+  padding-top: 40px;
+}
+.drawer-menu.open {
+  left: 0; /* slide in */
+}
+.menu-items {
+  display: none; /* hide by default */
+  list-style: none;
+}
+.drawer-menu.open .menu-items {
+  display: block; /* show when open */
+}
+.menu-items li a {
+  text-decoration: none;
+  color: black; /* or any desired color */
+  display: block;
+  padding: 10px; /* or any desired spacing */
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.menu-items li a:hover {
+  font-weight: bold;
+}
+
+/***************/
+/* header 영역 */
+/***************/
+
+header{
+  margin:0 auto;
+  width: 1100px;    /*  너비 */
+  height:150px;   /* 높이 */ 
+  overflow: hidden;
+}
+header span a{
+  text-decoration: none;
+  color: black; /* or any desired color */
+}
+
+/* 웹페이지 logo */
+
+#logo{
+  float:left;
+  width: 250px;
+  height:100%;
+  background-color:rgb(37, 72, 0);
+}
+
+/* schoolLogo */
+
+#schoolLogo {
+  float:right;
+  width: 850px;
+  display: flex;
+  align-items: center;
+}
+#schoolLogo img {
+  margin-top: 15px;
+  height: 120px;
+  margin-left: 10px;
+}
+#schoolLogo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/********************/
+/* firstLine 영역 */
+/********************/
+
+#firstLine{
+  margin:0 auto;
+  width:1100px;    /*  너비 */
+  height:300px;   /* 높이 */ 
+  border-top: 1px solid #000000;
+}
+
+/* map */
+
+#map {
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+
+/* schedule */
+
+#schedule{
+  float: left;
+  width: 400px;
+  height: 300px;
+  overflow: auto; /* Add scrollbar */
+}
+#schedule input[type="radio"] {
+  display:none;  /* 라디오 버튼 감춤 */ 
+}
+#schedule label {  /* 탭 제목 스타일 */ 
+  display:inline-block;  /* 탭들을 가로로 배치 */
+  margin:0;  /* 마진 */
+  padding:15px 25px;  /* 패딩 */
+  font-weight:600;   /* 글자 굵기 */
+  text-align: center;   /* 글자 정렬 */
+  color:#9b9b9b;  /* 글자 색 */ 
+  border:1px solid transparent;
+  /* border-left:1px solid #ddd; */
+}
+#schedule label:hover {  /* 마우스 오버했을 때 탭 제목 스타일 */
+  cursor:pointer;
+}
+#schedule input:checked + label {  /* 활성화된 탭 제목 스타일 */ 
+  color:rgb(0, 0, 0);
+  border:1px solid #ddd;
+  background-color: #eee;
+}
+.tabContent {  /* 탭 내용 스타일 */
+  display:none;
+  border-top:1px solid #ddd;
+}
+.tabContent h2{
+  display:none; 
+}
+.tabContent ul{
+  list-style: disc;
+  margin-left:10px;
+}
+.tabContent ul li{
+  font-size:16px;
+  line-height:2.5;
+}
+#tab1:checked ~ #first-semester, /* 한 종류만 뜨게 하는 코드 */
+#tab2:checked ~ #second-semester,
+#tab3:checked ~ #plus {
+  display:block;
+}
+
+/* schoolMeals */
+
+#schoolMeals{
+ float: left;
+ width: 294px;
+ height: 300px;
+ overflow:hidden;
+ position: relative;
+}
+#schoolMeals h4{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/********************/
+/* secondLine 영역 */
+/********************/
+
+#secondLine{
+  margin:0 auto;
+  width:1100px;    /*  너비 */
+  height:200px;   /* 높이 */ 
+  border-top: 1px solid #000000;
+}
+
+/* additional */
+
+#additional {
+  float: left;
+  width: 550px;
+  height: 200px;
+  /* background-color: rgb(85, 255, 0); */
+  border-right: 1px solid #000000;
+}
+#additional h3{
+  border-bottom:1px solid #ddd;
+  margin-left:10px;
+}
+
+/* other-schools */
+
+#other-schools{
+  float: left;
+  width: 549px;
+  height: 200px;
+  overflow: auto; /* Add scrollbar */
+}
+#other-schools h3{
+  border-bottom:1px solid #ddd;
+  margin-left:10px;
+}
+#other-schools ul{
+  list-style: disc;
+  margin-left:10px;
+}
+#other-schools ul li{
+  font-size:16px;
+  line-height: 2;
+}
+#other-schools p{
+  float: right;
+}
+
+/********************/
+/*   footer 영역    */
+/********************/
+
+footer {
+  height:150px;
+  border-top: 2px solid gray; /* Replace #333 with your desired dark gray color value */
+  background-color: black; /* Replace #f2f2f2 with your desired light gray color value */
+}
+
+#footer-inner{
+  margin:0 auto;
+  width:1100px; 
+}
+.word{
+  color:#fff;
+  text-align: center;
+}
