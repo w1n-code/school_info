@@ -179,12 +179,14 @@ header span a{
 #schoolMeals{
  float: left;
  width: 294px;
- /* margin: 20px 20px 20px 20px; */
- /* border-style: solid; */
- /* border-color:rgb(29, 35, 35); */
  height: 300px;
  overflow:hidden;
- /* border-radius: 15px; */
+ position: relative;
+}
+#schoolMeals h4{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /********************/
@@ -198,14 +200,18 @@ header span a{
   border-top: 1px solid #000000;
 }
 
-/* something */
+/* additional */
 
-#something {
+#additional {
   float: left;
   width: 550px;
   height: 200px;
   /* background-color: rgb(85, 255, 0); */
   border-right: 1px solid #000000;
+}
+#additional h3{
+  border-bottom:1px solid #ddd;
+  margin-left:10px;
 }
 
 /* other-schools */
