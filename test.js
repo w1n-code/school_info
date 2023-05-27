@@ -11,7 +11,7 @@ drawerToggle.addEventListener('click', function() {
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
     mapOption = { 
         center: new kakao.maps.LatLng(35.88389261025553, 128.58642961643818),
-     	level:5
+     	level:6
     };
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
@@ -33,7 +33,12 @@ var positions = [
 ];
 
 for (var i = 0; i < positions.length; i ++) {
-  var imageSrc = (i === 0) ? "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png" : "https://mapicons.mapsmarker.com/wp-content/uploads/mapicons/shape-default/color-3875d7.png";
+  if( i === 0){
+    	var imageSrc ="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+    }
+    else{
+    	var imageSrc = "http://t1.daumcdn.net/localimg/localimages/07/2018/pc/img/marker_spot.png";
+    }
     
     // 마커 이미지의 이미지 크기 입니다
     var imageSize = new kakao.maps.Size(24, 35); 
