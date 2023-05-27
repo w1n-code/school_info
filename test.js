@@ -32,9 +32,8 @@ var positions = [
     },
 ];
 
-var imageSrc = (i === 0) ? "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png" : "https://mapicons.mapsmarker.com/wp-content/uploads/mapicons/shape-default/color-3875d7.png";
-
 for (var i = 0; i < positions.length; i ++) {
+  var imageSrc = (i === 0) ? "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png" : "https://mapicons.mapsmarker.com/wp-content/uploads/mapicons/shape-default/color-3875d7.png";
     
     // 마커 이미지의 이미지 크기 입니다
     var imageSize = new kakao.maps.Size(24, 35); 
