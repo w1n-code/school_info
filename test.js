@@ -11,7 +11,7 @@ drawerToggle.addEventListener('click', function() {
 var container = document.getElementById('map');
 var options = {
   center: new kakao.maps.LatLng(35.88720165868838, 128.58509478903335),
-  level: 2
+  level: 8
 };
 var map = new kakao.maps.Map(container, options);
 
