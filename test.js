@@ -30,6 +30,10 @@ var positions = [
         title: '경명여자중학교', 
         latlng: new kakao.maps.LatLng(35.88082239685244, 128.59862890053688)
     },
+  {
+        title: '침산중학교', 
+        latlng: new kakao.maps.LatLng(35.889883974557186, 128.58890795979207)
+    },
 ];
 
 for (var i = 0; i < positions.length; i ++) {
