@@ -130,35 +130,44 @@ header span a{
   float: left;
   width: 400px;
   height: 300px;
-  overflow: auto; /* Add scrollbar */
 }
 #schedule input[type="radio"] {
-  display:none;  /* 라디오 버튼 감춤 */ 
+  display:none;
 }
-#schedule label {  /* 탭 제목 스타일 */ 
-  display:inline-block;  /* 탭들을 가로로 배치 */
-  margin:0;  /* 마진 */
-  padding:15px 25px;  /* 패딩 */
-  font-weight:600;   /* 글자 굵기 */
-  text-align: center;   /* 글자 정렬 */
-  color:#9b9b9b;  /* 글자 색 */ 
+#schedule label {
+  display:inline-block;
+  margin:0;
+  padding:15px 25px;
+  font-weight:600;
+  text-align: center;
+  color:#9b9b9b; 
   border:1px solid transparent;
-  /* border-left:1px solid #ddd; */
 }
-#schedule label:hover {  /* 마우스 오버했을 때 탭 제목 스타일 */
+#schedule label:hover {
   cursor:pointer;
 }
-#schedule input:checked + label {  /* 활성화된 탭 제목 스타일 */ 
+#schedule input:checked + label {
   color:rgb(0, 0, 0);
   border:1px solid #ddd;
   background-color: #eee;
 }
+
 .tabContent {  /* 탭 내용 스타일 */
   display:none;
   border-top:1px solid #ddd;
+  overflow-y: scroll;
+  height: 246px;
 }
-.tabContent h2{
-  display:none; 
+.tabContent::-webkit-scrollbar {
+  width: 6px;
+}
+.tabContent::-webkit-scrollbar-track {
+  background-color: rgb(241,241,241);
+}
+
+.tabContent::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: gray;
 }
 .tabContent ul{
   list-style: disc;
