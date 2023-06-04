@@ -209,16 +209,19 @@ header{
 
 /* additional */
 
-#additional {
+#school-info {
   float: left;
   width: 550px;
   height: 200px;
   /* background-color: rgb(85, 255, 0); */
   border-right: 1px solid #000000;
 }
-#additional h3{
+#school-info h3{
   border-bottom:1px solid #ddd;
   margin-left:10px;
+}
+#school-info p{
+  margin-left: 10px;
 }
 
 /* other-schools */
