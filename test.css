@@ -73,10 +73,6 @@ header{
   height:150px;   /* 높이 */ 
   overflow: hidden;
 }
-header span a{
-  text-decoration: none;
-  color: black; /* or any desired color */
-}
 
 /* 웹페이지 logo */
 
@@ -99,9 +95,11 @@ header span a{
   height: 120px;
   margin-left: 10px;
 }
-#schoolLogo span {
+#schoolLogo a {
   font-size: 1.5em;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 /********************/
